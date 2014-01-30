@@ -46,3 +46,7 @@ $(function()
 
 [1]: http://starfishmod.github.io/jquery-oembed-all/
 [2]: http://youtube.com
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/disshishkov/jquery-oembed-youtube/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
