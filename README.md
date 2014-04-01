@@ -21,7 +21,8 @@ Options
 
 - **maxWidth** (default value is `'auto'`) - max width of returned youtube player
 - **maxHeight** (default value is `'auto'`) - max height of returned youtube player
-- **includeHandle** (default value is `true`) - indicates include or not handle for collapse/expand embed youtube player. See v ^ near link
+- **replaceLink** (default value is `'true'`) - replcae link by embded player.
+- **includeHandle** (default value is `true`, works only if `replaceLink` is `false`) - indicates include or not handle for collapse/expand embed youtube player. See v ^ near link
 - **onProviderNotFound** (default value is `null`) - fires when resource link isn't valid youtube link
 - **beforeEmbed** (default value is `null`) - fires before starting embed the youtube player
 - **afterEmbed** (default value is `null`) - fires after starting embed the youtube player

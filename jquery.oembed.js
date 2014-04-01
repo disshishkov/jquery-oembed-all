@@ -7,7 +7,7 @@
  * Orignal Author: Richard Chamorro 
  * Forked by Dis Shishkov to clean code for use only youtube.
  */
-(function($) 
+(function($)
 {
     $.fn.OEmbedYoutube = function(options) 
     {
@@ -17,7 +17,7 @@
         {
             var container = $(this);
             var resourceUrl = container.attr("href");
-
+            
             if (!_settings.onEmbed)
             {
                 _settings.onEmbed = function(oembedData) 
@@ -56,6 +56,7 @@
         maxWidth: null,
         maxHeight: null,
         includeHandle: true,
+        replaceLink: true,
         onProviderNotFound: null,
         beforeEmbed: null,
         afterEmbed: null,
@@ -99,7 +100,12 @@
         container.wrap('<div></div>');
         var oembedContainer = container.parent();
         
-        if (_settings.includeHandle) 
+        if (_settings.replaceLink)
+        {
+            container.remove();
+        }
+        
+        if (_settings.includeHandle && !_settings.replaceLink) 
         {
             $('<span>&darr;</span>').insertBefore(container).click(function() 
             {
