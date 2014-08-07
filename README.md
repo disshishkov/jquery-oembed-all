@@ -19,14 +19,14 @@ Ex: `<a href="http://www.youtube.com/watch?v=8mwKq7_JlS8" class="embed"></a>`
 Options
 -----------
 
-- **maxWidth** (default value is `'auto'`) - max width of returned youtube player
-- **maxHeight** (default value is `'auto'`) - max height of returned youtube player
-- **replaceLink** (default value is `'true'`) - replcae link by embded player.
-- **includeHandle** (default value is `true`, works only if `replaceLink` is `false`) - indicates include or not handle for collapse/expand embed youtube player. See v ^ near link
-- **onProviderNotFound** (default value is `null`) - fires when resource link isn't valid youtube link
-- **beforeEmbed** (default value is `null`) - fires before starting embed the youtube player
-- **afterEmbed** (default value is `null`) - fires after starting embed the youtube player
-- **onEmbed** (default value is `null`) - fires on embeding the youtube player
+- **MaxWidth** (default value is `'auto'`) - max width of returned youtube player
+- **MaxHeight** (default value is `'auto'`) - max height of returned youtube player
+- **IsReplaceLink** (default value is `'true'`) - replcae link by embded player.
+- **IsIncludeHandle** (default value is `true`, works only if `IsReplaceLink` is `false`) - indicates include or not handle for collapse/expand embed youtube player. See v ^ near link
+- **OnProviderNotFound** (default value is `null`) - fires when resource link isn't valid youtube link
+- **OnBeforeEmbed** (default value is `null`) - fires before starting embed the youtube player
+- **OnAfterEmbed** (default value is `null`) - fires after starting embed the youtube player
+- **OnEmbed** (default value is `null`) - fires on embeding the youtube player
 
 
 ````
@@ -34,13 +34,13 @@ $(function()
 {
    $("a.embed").OEmbedYoutube(
    {
-        maxWidth: 500,
-        maxHeight: 500,
-        includeHandle: false,
-        onProviderNotFound: function(element, resourceUrl) { alert(resourceUrl + " wan't found"); },
-        beforeEmbed: function(element, oembedData) { alert("I will embed next code: " + oembedData); },
-        afterEmbed: function(element, oembedData) { alert("I have embeded next code: " + oembedData); },
-        onEmbed: function(element, oembedData) { alert("I am embeding next code: " + oembedData); }
+        MaxWidth: 500,
+        MaxHeight: 500,
+        IsIncludeHandle: false,
+        OnProviderNotFound: function(element, resourceUrl) { alert(resourceUrl + " wan't found"); },
+        OnBeforeEmbed: function(element, oembedData) { alert("I will embed next code: " + oembedData); },
+        OnAfterEmbed: function(element, oembedData) { alert("I have embeded next code: " + oembedData); },
+        OnEmbed: function(element, oembedData) { alert("I am embeding next code: " + oembedData); }
    });
 });
 ````

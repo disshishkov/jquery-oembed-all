@@ -1,0 +1,49 @@
+{
+    "author": 
+    {
+        "name": "Dis Shishkov",
+        "email": "dis.shishkov.regs@outlook.com"
+    },
+    "licenses": 
+    [
+        {
+            "type": "MIT",
+            "url": "https://github.com/disshishkov/jquery-oembed-youtube/blob/master/LICENSE"
+        }
+    ],
+    "originalPlugin": 
+    {
+        "author": 
+        {
+            "name": "Richard Chamorro",
+            "email": ""
+        },
+        "name": "jquery-oembed",
+        "homepage": "https://code.google.com/p/jquery-oembed/"
+    },
+    "name": "jquery-oembed-youtube",
+    "version": "1.0.0",
+    "description": "a jquery plugin to embed youtube links.",
+    "site": "http://disshishkov.github.io/jquery-oembed-youtube",
+    "pluginName": "jquery.oembed",
+    "repository": 
+    {
+        "type": "git",
+        "url": "https://github.com/disshishkov/jquery-oembed-youtube"
+    },
+    "bugs": 
+    {
+        "url": "https://github.com/disshishkov/jquery-oembed-youtube/issues"
+    },
+    "dependencies": 
+    {
+        "jquery": ">=1.10"
+    },
+    "devDependencies": 
+    {
+        "grunt": "~0.4.5",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-ts": "~1.6.4",
+        "grunt-contrib-uglify": "~0.3.2"
+    }
+}

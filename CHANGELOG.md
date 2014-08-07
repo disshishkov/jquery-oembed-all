@@ -1,6 +1,10 @@
 ChangeLog
 ==============
 
+1.0.0
+-----
+* Re-wrote in Typescript
+
 0.3.0
 -----
 * Use `https` instead of `http`

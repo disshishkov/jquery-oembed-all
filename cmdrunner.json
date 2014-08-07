@@ -1,0 +1,12 @@
+[
+    {
+        "label": "Build Project",
+        "cmd": "grunt",
+        "args": [],
+        "key": "Ctrl-Shift-B",
+        "opts":
+        {
+            "defaultPath": "c:\\Work\\JavaScript\\jquery-oembed-youtube\\"
+        }
+    }
+]
