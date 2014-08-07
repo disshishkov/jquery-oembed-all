@@ -1,6 +1,10 @@
 ChangeLog
 ==============
 
+0.3.0
+-----
+* Use `https` instead of `http`
+
 0.2.0
 -----
 * New option `replaceLink`

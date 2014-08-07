@@ -29,7 +29,7 @@
             var regExp = new RegExp("youtube\\.com/watch.+v=[\\w-]+&?", "i");
             if (resourceUrl !== null && resourceUrl !== undefined && resourceUrl.match(regExp) !== null) 
             {
-                var provider = new $.fn.OEmbedYoutube.OEmbedProvider('http://www.youtube.com/embed/$1?wmode=transparent', 
+                var provider = new $.fn.OEmbedYoutube.OEmbedProvider('https://www.youtube.com/embed/$1?wmode=transparent', 
                 {
                     templateRegex: /.*(?:v\=|be\/|embed\/)([\w\-]+)&?.*/,
                     embedtag: { tag: 'iframe', width: '425', height: '349' }
